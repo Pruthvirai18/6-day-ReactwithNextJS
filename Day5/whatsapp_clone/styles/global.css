@@ -1,0 +1,94 @@
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #25d366;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* WhatsApp-style chat bubbles */
+.chat-bubble {
+  max-width: 75%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+
+.chat-bubble.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.chat-bubble.received {
+  background-color: #ffffff;
+  align-self: flex-start;
+}
+
+/* Chat window styling */
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #e5ddd5;
+}
+
+/* Input Box */
+.message-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* Send Button */
+.send-button {
+  background-color: #25d366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background-color: #1ebe57;
+}
+
+/* Chat list styles */
+.chat-list {
+  width: 100%;
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+}
+
+.chat-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-list {
+    width: 100%;
+    border-right: none;
+  }
+
+  .chat-window {
+    height: calc(100vh - 60px);
+  }
+}
